@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScrit Avançado</title>
+</head>
+<body>
+  <script>
+    if(typeof(Storage) !== 'undefined') {
+      alert('O navegador é compratível com storage!');
+      inicialize();
+    } else {
+      alert('Atualize seu nevegador!');
+    }
+
+    function inicialize() {
+      if(sessionStorage.getItem('name') !== null) {
+        alert(`Olá ${sessionStorage.name}, seja bem vindo(a) de volta!`);
+      } else {
+        alert(`Olá! Essa é sua primeira visita no nosso site, sejá bem vindo(a)!`);
+        sessionStorage.name = "Jean";
+      }
+    }
+  </script>
+</body>
+</html>

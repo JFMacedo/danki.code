@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angular JS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gotu', sans-serif;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+
+  <div ng-app="meuApp" ng-controller="pessoaCtrl">
+    <p>O nome é {{ firstName | uppercase }} {{ lastName | uppercase }}</p>
+  </div>
+
+  <script>
+    var meuApp = angular.module('meuApp', []);
+    meuApp.controller('pessoaCtrl', function($scope) {
+      $scope.firstName = 'Jean';
+      $scope.lastName = 'Macedo';
+    });
+  </script>
+  
+</body>
+</html>

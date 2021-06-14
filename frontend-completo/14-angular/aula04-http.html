@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Angular JS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: 'Gotu', sans-serif;
+    }
+  </style>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body>
+  <div ng-app="myApp" ng-controller="myCtrl">
+    <p>A menssagem de bom dia hoje é:</p>
+    <div ng-bind-html="myWelcome"></div>
+  </div>
+
+  <!-- <script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope, $http) {
+      $http.get('aula04ajax.html')
+      .then(function(response) {
+        $scope.myWelcome = response.data;
+      });
+    });
+  </script> -->
+
+  <script>
+    var app = angular.module('myApp', []);
+    app.controller('myCtrl', function($scope, $http, $sce) {
+      $http({
+        method: 'GET',
+        url: 'aula04-ajax.html'
+      }).then(function mySuccess(response) {
+        $scope.myWelcome = $sce.trustAsHtml(response.data);
+      }, function myError(response) {
+        $scope.myWelcome = response.statusText;
+      });
+    });
+  </script>
+  
+</body>
+</html>

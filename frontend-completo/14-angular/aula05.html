@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular JS</title>
+  <link rel="stylesheet" href="aula05.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+</head>
+<body>
+  <div ng-app="myShoppingList" ng-controller="myCtrl">
+    <ul>
+      <h2>Lista de Produtos</h2>
+      <li ng-repeat="x in products">{{ x }} <span ng-click="removeItem($index)">&times;</span></li>
+    </ul>
+    <input ng-model="newItem" />
+    <button ng-click="addItem()">Adicionar!</button>
+  </div>
+  
+  <script src="aula05.js"></script>
+</body>
+</html>

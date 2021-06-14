@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+
+/* "*" todos os elementos existentes no documento */
+* {
+	font-family: 'Alegreya', serif;
+	/* "resetando" o documento */
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.pai {
+	width: 500px;
+	padding: 20px 0;
+	margin: 0 auto;
+	background: blue;
+}
+
+.filho {
+	box-sizing: border-box;
+	width: 250px;
+	height: 300px;
+	background: red;
+	float: left;
+	border: 1px solid black;
+	text-align: center;
+	color: white;
+	padding: 50px 0px;
+	font-size: 20px;
+}
+
+.filha {
+	box-sizing: border-box;
+	width: 250px;
+	height: 600px;
+	background: red;
+	float: left;
+	border: 1px solid black;
+	text-align: center;
+	color: white;
+	padding: 50px 0px;
+	font-size: 20px;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue JS</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app1" v-html="message">
+    {{message}}
+  </div><!--app-->
+  <div id="app2" v-if="seen">
+    {{nome}}
+  </div><!--app2-->
+  <div id="app3">
+    <ol>
+      <li v-for="todo in todos">
+        {{ todo.text }}
+      </li>
+    </ol>
+  </div><!--app3-->
+  <div id="app4">
+    <button v-on:Click="reverseMessage">Mensagem Invertida</button>
+    <button v-on:mouseDown="changeBg" v-on:mouseUp="returnBg">Trocar BG</button>
+    <p>{{ message }}</p>
+  </div><!--app4-->
+  <script>
+    var app = new Vue({
+      el: '#app1',
+      data: {
+        message: '<h2>Olá mundo!</h2>'
+      }
+    })
+
+    var app2 = new Vue({
+      el: '#app2',
+      data: {
+        seen: true,
+        nome: 'Jean Fernandes de Macedo'
+      }
+    })
+
+    var app3 = new Vue({
+      el: '#app3',
+      data: {
+        todos: [
+          { text: 'Aprender JavaScript' },
+          { text: 'Aprender VueJS'},
+          { text: 'Construir algo incrivel' }
+        ]
+      }
+    })
+
+    var app4 = new Vue({
+      el: '#app4',
+      data: {
+        message: 'Olá Mundo!'
+      },
+      methods: {
+        reverseMessage: function() {
+          this.message = this.message.split('').reverse().join('')
+        },
+        changeBg: function() {
+          document.querySelector('body').style.backgroundColor = '#007246'
+          document.querySelector('body').style.color = '#FFFFFF'
+        },
+        returnBg: function() {
+          document.querySelector('body').style.backgroundColor = '#FFFFFF'
+          document.querySelector('body').style.color = '#000000'
+        }
+      }
+    })
+  </script>
+</body>
+</html>

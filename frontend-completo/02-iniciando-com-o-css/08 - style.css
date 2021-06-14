@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya&display=swap');
+
+/* "*" todos os elementos existentes no documento */
+* {
+	font-family: 'Alegreya', serif;
+	/* "resetando" o documento */
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.tipo1 {
+	color: rgb(100, 100, 100);
+}
+
+a.link_ {
+	font-size: 30px;
+}
+
+.tipo2 {
+	background-color: black;
+}

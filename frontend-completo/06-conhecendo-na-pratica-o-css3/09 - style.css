@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css?family=Playball&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playball', cursive;
+}
+
+html, body {
+  height: 100%;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  background: repeating-radial-gradient(green, white 10%, yellow 20%, green 30%);
+}

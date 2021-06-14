@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.artigo1 {
+  width: 100%;
+  padding: 30px;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  background-color: #D5EAF5;
+}
+
+.artigo2 {
+  width: 100%;
+  padding: 30px;
+  text-shadow: 1px 1px 1px #FFFFFF;
+  background-color: #D5D5D5;
+}

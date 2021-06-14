@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="PT-br">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="_css/style.css">
+    <link rel="shortcut icon" href="_images/logorm.png" type="image/x-icon">
+    <title>Projeto 05</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <img src="_images/logo.jpg" alt="Logo" />
+        </div><!--logo-->
+        <nav class="desktop">
+          <ul>
+            <li><a style="color: #EB2D2D" href="index.html">Home</a></li>
+            <li><a href="venda.html">Venda</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a goto="contato" href="#">Contato</a></li>
+          </ul>
+        </nav><!--descktop-->
+        <nav class="mobile">
+          <ul>
+            <li><a style="color: #EB2D2D" href="index.html">Home</a></li>
+            <li><a href="venda.html">Venda</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a goto="contato" href="#">Contato</a></li>
+          </ul>
+        </nav><!--mobile-->
+        <div class="clear"></div><!--clear-->
+      </div><!--container-->
+    </header>
+    <section class="banner">
+      <div class="container">
+        <div class="text-banner">
+          <div class="text-banner-single">Consultoria</div><!--text-banner-single-->
+          <div class="text-banner-single">Compra</div><!--text-banner-single-->
+          <div class="text-banner-single">Venda</div><!--text-banner-single-->
+          <div class="text-banner-single">contato@rmveiculosespeciais.com.br</div><!--text-banner-single-->
+        </div><!--text-banner-->
+      </div><!--container-->
+    </section><!--banner-->
+    <section class="veiculos-destaque">
+      <div class="line-titulo">
+        <div class="line"></div><!--line-->
+          <h2>Veículos em destaque</h2>
+      </div><!--line-titulo-->
+      <div class="container">
+        <div class="galeria-destaque">
+          <div class="carro-img" style="background-image: url('_images/carro1.jpg');"></div><!--carro-img-->
+          <div class="carro-info">
+            <h2>Wolkswagen Karmann-ghia</h2>
+            <p>1.6 8v, Gasolina, 2P, Manual</p>
+            <p>1969</p>
+            <a class="bsm" href="">Mais Detalhes</a>
+          </div><!--carro-info-->
+        </div><!--galeria-destaque-->
+        <div class="galeria-destaque">
+          <div class="carro-img" style="background-image: url('_images/carro2.jpg');"></div><!--carro-img-->
+          <div class="carro-info">
+            <h2>Ford Galaxie Landau</h2>
+            <p>302 8v, Gasolina, 4P, Manual</p>
+            <p>1981</p>
+            <a class="bsm" href="">Mais Detalhes</a>
+          </div><!--carro-info-->
+        </div><!--galeria-destaque-->
+        <div class="galeria-destaque">
+          <div class="carro-img" style="background-image: url('_images/carro3.jpg');"></div><!--carro-img-->
+          <div class="carro-info">
+            <h2>Ford F100</h2>
+            <p>272 8v, Gasolina, 2P, Manual</p>
+            <p>1972</p>
+            <a class="bsm" href="">Mais Detalhes</a>
+          </div><!--carro-info-->
+        </div><!--galeria-destaque-->
+        <div class="clear"></div><!--clear-->
+      </div><!--container-->
+    </section><!--veiculos-destaque-->
+    <section class="servicos-depoimentos">
+      <div class="servicos">
+        <div class="servicos-wraper">
+          <h2>Serviços</h2>
+          <ul>
+            <li>Compra</li>
+            <li>Venda</li>
+            <li>Consignação</li>
+            <li>Consultoria de Veículos</li>
+            <li>Indicação de Mecânicos e Peças</li>
+          </ul>
+          <a class="bsm" href="">Saiba mais</a>
+        </div><!--servicos-wraper-->
+      </div><!--servicos-->
+      <div class="depoimentos">
+        <div class="depoimentos-wraper">
+          <h2>Depoimentos</h2>
+          <div class="depoimento-single">
+            <p>"O Rafael foi muito atencioso, me buscou no aeroporto e garantiu toda comodidade e conforto no almoço, no transfer, na visita ao veículo e durante o test-drive"</p>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis laborum dicta aliquid a ipsam rem, eos blanditiis ut labore corporis. Placeat excepturi et adipisci officiis autem aut laboriosam voluptate quae."</p>
+          </div><!--depoimento-single-->
+          <div class="nav">
+            <div class="arrows">
+              <img prev src="_images/arrow-left.png">
+              <img next src="_images/arrow-right.png">
+            </div><!--arrows-->
+            <div class="nome-depoimento">João da Silva</div>
+          </div><!--nav-->
+        </div><!--depoimentos-wraper-->
+      </div><!--depoimentos-->
+    </section><!--servicos-depoimentos-->
+    <section id="contato" class="contato">
+      <div class="line-titulo">
+        <div class="line"></div><!--line-->
+          <h2>Contato</h2>
+      </div><!--line-titulo-->
+      <form>
+        <div class="input-wraper w100">
+          <input type="text" name="nome" id="nome" placeholder="Nome*" required>
+        </div><!--input-wraper-->
+        <div class="input-wraper w50">
+          <input type="text" name="email" id="email" placeholder="Email*" required>
+        </div><!--input-wraper-->
+        <div class="input-wraper w50">
+          <input type="text" name="tel" id="tel" placeholder="Telefone" required>
+        </div><!--input-wraper-->
+        <div class="input-wraper w100">
+          <textarea name="msg" id="msg" placeholder="Mensagem*" required></textarea>
+        </div><!--input-wraper-->
+        <div class="input-wraper w100">
+          <input class="bsm" type="submit" value="Enviar">
+        </div><!--input-wraper-->
+        <div class="clear"></div><!--clear-->
+      </form>
+    </section><!--contato-->
+    <footer>
+      <div class="container">
+        <nav>
+          <ul>
+            <li><a style="color: #EB2D2D" href="index.html">Home</a></li>
+            <li><a href="venda.html">Venda</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a goto="contato" href="#">Contato</a></li>
+          </ul>
+        </nav>
+        <p>&copy; Todos os direitos reservador JFMacedo</p>
+        <div class="clear"></div><!--clear-->
+      </div><!--container-->
+    </footer>
+    <script src="_js/jquery.js"></script>
+    <script src="_js/scripts.js"></script>
+  </body>
+</html>

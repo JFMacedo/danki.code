@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lobster', cursive;
+}
+
+html, body {
+  height: 100%;
+}
+
+.clear {
+  clear: both;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
+
+header {
+  background-color: #1976D2;
+}
+
+header div.logo {
+  float: left;
+}
+
+header div.logo h2 {
+  color: #FFFFFF;
+  line-height: 60px;
+}
+
+header nav.menu-desktop {
+  float: right;
+}
+
+header nav.menu-desktop > ul {
+  list-style-type: none;
+}
+
+header nav.menu-desktop > ul > li {
+  position: relative;
+  display: inline-block;
+  font-size: 18px;
+}
+
+header nav.menu-desktop ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0 15px;
+  height: 60px;
+  line-height: 60px;
+}
+
+header nav.menu-desktop > ul > li > a:hover {
+  background-color: #00000033;
+}
+
+header nav.menu-desktop > ul > li:hover > ul.submenu-desktop {
+  display: block;
+}
+
+ul.submenu-desktop {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 60px;
+  width: 250px;
+  list-style-type: none;
+  background-color: #145EA8;
+}
+
+header nav.menu-desktop > ul > li > ul.submenu-desktop > li > a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0 15px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+ul.submenu-desktop > li > a:hover {
+  background-color: #1976D2;
+}
+
+header nav.menu-mobile {
+  display: none;
+  float: right;
+}
+
+header nav.menu-mobile h1 {
+  color: #FFFFFF;
+  line-height: 60px;
+}
+
+header nav.menu-mobile > ul {
+  list-style-type: none;
+  display: none;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 60px;
+}
+
+header nav.menu-mobile > ul > li {
+  position: relative;
+  font-size: 18px;
+  background-color: #145EA8;
+}
+
+header nav.menu-mobile ul > li > a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0 15px;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+}
+
+header nav.menu-mobile > ul > li > a:hover {
+  background-color: #00000033;
+}
+
+ul.submenu-mobile {
+  display: none;
+  right: 0;
+  top: 60px;
+  width: 100%;
+  list-style-type: none;
+  background-color: #1976D2;
+}
+
+header nav.menu-mobile > ul > li > ul.submenu-mobile > li > a {
+  display: block;
+  text-decoration: none;
+  color: #FFFFFF;
+  padding: 0 15px;
+  width: 100%;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+}
+
+ul.submenu-mobile > li > a:hover {
+  background-color: #00000033;
+}
+
+@media screen and (max-width: 580px) {
+  header nav.menu-desktop {
+    display: none;
+  }
+
+  header nav.menu-mobile {
+    display: block;
+  }
+}

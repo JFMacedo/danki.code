@@ -1,0 +1,449 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Dosis', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.center {
+  margin: 0 auto;
+  max-width: 1280px;
+  padding: 0 2%;
+}
+
+.clear {
+  clear: both;
+}
+
+.layer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #00000099, #000000AA);
+  z-index: 1;
+}
+
+span {
+  color: #0099FF;
+}
+
+i.fas {
+  font-size: 15px;
+}
+
+section.main {
+  position: relative;
+  background-image: url('../_images/bg1.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 15px;
+  min-height: 800px;
+}
+
+section.main header {
+  position: relative;
+  z-index: 2;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+section.main header div.icon-social {
+  float: right;
+}
+
+section.main header div.icon-social a {
+  color: #FFFFFF;
+  font-size: 20px;
+  text-decoration: none;
+  margin: 0 15px;
+}
+
+section.main header div.icon-social a:hover {
+  color: #0099FF;
+}
+
+section.main header div.logo {
+  float: left;
+  color: #FFFFFF;
+  font-size: 25px;
+  line-height: 30px;
+  font-weight: 600;
+  margin: 15px;
+}
+
+section.main header nav.desktop {
+  float: right;
+}
+
+section.main header nav.desktop ul {
+  list-style-type: none;
+}
+
+section.main header nav.desktop ul li {
+  display: inline-block;
+  margin: 15px;
+}
+
+section.main header nav.desktop ul li a {
+  color: #FFFFFF;
+  font-size: 20px;
+  line-height: 30px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+section.main header nav.desktop ul li a:hover {
+  color: #0099FF;
+}
+
+section.main header nav.mobile {
+  display: none;
+  float: right;
+}
+
+section.main header nav.mobile i {
+  font-size: 30px;
+  color: #FFFFFF;
+  margin: 15px;
+}
+
+section.main header nav.mobile ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 86px;
+  width: 100%;
+  list-style-type: none;
+}
+
+section.main header nav.mobile ul li {
+  font-size: 20px;
+  text-align: center;
+  padding: 1px 0;
+}
+
+section.main header nav.mobile ul li a {
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  padding: 10px 0;
+  width: 100%;
+  background-color: #FFFFFF;
+  text-decoration: none;
+  color: #000000;
+}
+
+section.main section.header-content {
+  position: relative;
+  max-width: 700px;
+  margin: 100px 15px;
+  z-index: 1;
+}
+
+section.main section.header-content h2 {
+  color: #FFFFFF;
+  font-size: 50px;
+  font-weight: 400;
+}
+
+section.main section.header-content p {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-weight: 400;
+  text-indent: 15px;
+  text-align: justify;
+}
+
+section.main section.header-content a {
+  display: block;
+  color: #FFFFFF;
+  background-color: #0099FF;
+  font-size: 20px;
+  font-weight: 600;
+  width: 200px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-top: 15px;
+  transition: 0.3s;
+  text-shadow: none;
+  box-shadow: 1px 1px 0px #000000;
+}
+
+section.main section.header-content a:hover {
+  background-color: #0099FF99;
+}
+
+section.planos div.chamada-planos {
+  width: 100%;
+  text-align: center;
+  padding: 27px 2%;
+  background-color: #DDDDDD;
+}
+
+section.planos div.chamada-planos h2 {
+  display: inline-block;
+  border-top: 2px solid #0099FF;
+  color: #0099FF;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+div.box-planos {
+  padding: 40px 0;
+}
+
+div.box-planos div.center {
+  display: flex;
+  justify-content: space-around;
+}
+
+div.box-planos div.box-plano {
+  width: 25%;
+  box-shadow: 1px 1px 5px #000000AA;
+}
+
+div.box-planos div.box-plano h2 {
+  background-color: #0099ff;
+  color: #FFFFFF;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 25px;
+}
+
+div.box-planos div.box-plano div.pontos-plano {
+  padding: 15px 10px;
+}
+
+div.box-planos div.box-plano div.pontos-plano p {
+  color: #777777;
+  font-size: 18px;
+}
+
+div.box-planos div.box-plano div.box-preco {
+  text-align: center;
+}
+
+div.box-planos div.box-plano div.box-preco h2 {
+  background-color: transparent;
+  display: inline-block;
+  text-align: center;
+  color: #777777;
+  font-weight: 300;
+  padding: 10px 30px;
+  border-top: 1px solid #777777;
+}
+
+section.parallax {
+  width: 100%;
+  min-height: 300px;
+  background-image: url('../_images/bg-parallax.jpg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+section.parallax > div.center {
+  color: #FFFFFF;
+  position: relative;
+  z-index: 2;
+  padding: 40px 2%;
+  max-width: 900px;
+}
+
+section.parallax h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 400;
+  padding-bottom: 20px;
+}
+
+section.parallax p {
+  font-size: 20px;
+  text-indent: 15px;
+}
+
+section.contato {
+  padding: 40px 2%;
+}
+
+section.contato div.center {
+  display: flex;
+}
+
+section.contato div.center h2 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+section.contato div.center div.form {
+  padding: 0 2%;
+  width: 100%;
+}
+
+section.contato div.center div.form form input,
+section.contato div.center div.form form textarea {
+  width: 100%;
+  height: 50px;
+  border: 2px solid #DDDDDD;
+  margin: 10px 0;
+  padding-left: 10px;
+  font-size: 20px;
+}
+
+section.contato div.center div.form form textarea {
+  height: 150px;
+  resize: none;
+}
+
+section.contato div.center div.form form input[type="submit"] {
+  display: block;
+  color: #FFFFFF;
+  background-color: #0099FF;
+  font-size: 20px;
+  font-weight: 600;
+  width: 150px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 15px;
+  margin-top: 15px;
+  transition: 0.3s;
+  border: none;
+}
+
+section.contato div.center div.form form input[type="submit"]:hover {
+  background-color: #0099FF99;
+}
+
+div.team {
+  padding: 0 2%;
+  width: 100%;
+}
+
+div.team {
+  padding: 0 2%;
+  width: 100%;
+}
+
+div.team div.team-wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.team div.team-wrap div.person {
+  width: 48%;
+  margin: 10px 0;
+  padding: 20px;
+  box-shadow: 1px 1px 5px #000000AA;
+}
+
+div.team div.team-wrap div.person div.top-box-person {
+  display: flex;
+  border-bottom: 1px solid #777777;
+  margin: 5px;
+}
+
+div.team div.team-wrap div.person div.top-box-person div.box-avatar1 {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-image: url("../_images/perfil.jpeg");
+  background-size: contain;
+  background-position: center;
+}
+
+div.team div.team-wrap div.person div.top-box-person div.box-avatar2 {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 15px;
+  border-radius: 50%;
+  background-image: url("../_images/pp.jpeg");
+  background-size: contain;
+  background-position: center;
+}
+
+div.team div.team-wrap div.person div.top-box-person div.box-info h2 {
+  font-size: 20px;
+  font-weight: 400;
+  margin: 5px;
+  margin-bottom: 0;
+}
+
+div.team div.team-wrap div.person div.top-box-person div.box-info p {
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 5px;
+  color: #777777;
+  font-style: italic;
+}
+
+div.team div.team-wrap div.person div.description-person p {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 5px;
+  margin-top: 15px;
+  line-height: 27px;
+  text-align: justify;
+}
+
+footer {
+  padding: 20px 0;
+  color: #FFFFFF;
+  background-color: #777777;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media screen and (max-width: 580px) {
+  section.main header nav.desktop {
+    display: none;
+  }
+
+  section.main header nav.mobile {
+    display: inline-block;
+  }
+
+  div.box-planos {
+    padding: 0;
+  }
+
+  div.box-planos div.center {
+    flex-direction: column;
+  }
+
+  div.box-planos div.box-plano {
+    width: 80%;
+    margin: 10%;
+  }
+
+  section.contato div.center {
+    flex-direction: column;
+  }
+
+  div.team {
+    padding: 20px 2% 0 2%;
+  }
+
+  div.team div.team-wrap {
+    flex-direction: column;
+  }
+
+  div.team div.team-wrap div.person {
+    width: 80%;
+    margin: 10%;
+  }
+}

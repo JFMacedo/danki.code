@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScrit Avançado</title>
+</head>
+<body>
+  <h1 id="main-text"></h1>
+  <div class="teste">
+    <p>Hey, oh!</p>
+  </div>
+  <p>Let's go.</p>
+  <script>
+    window.onload = function() {
+      var el = document.getElementById('main-text');
+      el.innerHTML = 'Olá Mundo!';
+      el.style.fontFamily = 'arial';
+      el.style.color = '#FFFFFF';
+      el.style.textShadow = '1px 1px 1px #000000';
+
+      // var el2 = document.querySelector('p');
+      // el2.style.fontFamily = 'arial';
+      // el2.style.color = '#FFFFFF';
+      // el2.style.textShadow = '1px 1px 1px #000000';
+
+      var els = document.querySelectorAll('p');
+
+      for(el of els) {
+        el.style.color = 'gold';
+      }
+    }
+  </script>
+</body>
+</html>

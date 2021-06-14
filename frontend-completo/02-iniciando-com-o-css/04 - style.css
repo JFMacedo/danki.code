@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Saira&display=swap');
+
+/* "*" todos os elementos existentes no documento */
+* {
+	font-family: 'Saira', sans-serif;
+	/* "resetando" o documento */
+	margin: 0;
+	padding: 0;
+}
+
+.artigo {
+	background-color: #ddd;
+	width: 1280px;
+	margin: 40px auto;
+	text-align: center;
+	padding: 40px;
+}
+
+.artigo h1 {
+	color: #069;
+	font-size: 23px;
+	font-variant: small-caps;
+}
+
+.artigo p {
+	text-align: justify;
+	color: #b4b4b4;
+	font-size: 17px;
+	font-style: oblique;
+	font-weight: bold;
+	margin-top: 12px;
+	line-height: 40px;
+}

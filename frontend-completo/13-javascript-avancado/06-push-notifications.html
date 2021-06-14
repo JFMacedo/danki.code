@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScrit Avançado</title>
+  <script src="https://kit.fontawesome.com/19f0b7e996.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/push.js/1.0.12/push.min.js"></script>
+  <script>
+    console.log(Push.Permission.get());
+
+    if(Push.Permission.get() != 'granted') {
+      Push.Permission.request();
+    }
+    if(Push.Permission.get() == 'granted') {
+      Push.create('Olá da Danki.Code!', {
+        body: 'Esta é uma notificação',
+        icon: 'icon.png',
+        timeout: 8000,            //Timeout before notification closes automatically.
+        vibrate: [100, 100, 100],//An array od vibration pulses for mobile devices.
+        onClick: function() {
+          //callback for when the notification is clicked.
+          window.location.href = 'http://www.dankicode.com.br';
+        }
+      });
+    }
+  </script>
+</body>
+</html>

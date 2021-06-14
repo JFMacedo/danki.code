@@ -1,0 +1,42 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Prociono&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Prociono', serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 20px auto;
+  padding: 2px 1px;
+  border: 3px solid rgb(230, 230, 230);
+  overflow: hidden;
+}
+
+.img-wraper {
+  width: 33.3%;
+  padding-top: calc(33.3% / 1.6);
+  float: left;
+  background-color: rgb(200, 200 ,200);
+  position: relative;
+  border: 4px solid white;
+}
+
+.img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}

@@ -1,0 +1,32 @@
+@font-face {
+  font-family: 'Acme';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Acme Regular'), local('Acme-Regular'), url(https://fonts.gstatic.com/s/acme/v9/RrQfboBx-C5_bx0.ttf) format('truetype');
+}
+* {
+  font-family: 'Acme', sans-serif;
+}
+body {
+  background-color: #007246;
+}
+h2 {
+  color: #00a565;
+  text-shadow: 1px 1px 1px #000000;
+  font-size: 150%;
+}
+h2:hover {
+  color: #005ba5;
+}
+@media screen and (max-width: 900px) {
+  h2 {
+    color: #ffffff;
+  }
+}
+a {
+  text-decoration: none;
+  color: #005ba5;
+  font-size: 150%;
+  text-shadow: 1px 1px 1px #000000;
+}

@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Slabo 27px', serif;
+}
+
+div.box {
+  width: 100%;
+  padding: 30px 2%;
+  background-color: rgb(220, 230, 220);
+  text-align: justify;
+}
+
+div.box > p {
+  word-break: break-all;
+  display: inline;
+  color: #333333;
+  font-size: 17px;
+  border-bottom: 2px solid green;
+}

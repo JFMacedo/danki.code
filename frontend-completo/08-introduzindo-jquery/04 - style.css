@@ -1,0 +1,26 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.box {
+  height: 3000px;
+}
+
+.box1 {
+  width: 500px;
+  height: 500px;
+  margin: 100px auto;
+  color: #FFFEEE;
+  background-color: #430901;
+}
+
+.box1 h1 {
+  text-align: center;
+  line-height: 500px;
+}

@@ -1,0 +1,90 @@
+﻿@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:100,200,300,400,500,600,700,800,900&display=swap');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+form {
+	width: 96%;
+	max-width: 600px;
+	margin: 30px auto;
+	text-align: center;
+}
+
+fieldset {
+	border: 1px solid rgb(150, 150, 170);
+	padding: 0px 40px 30px 40px;
+}
+
+fieldset legend {
+	text-align: left;
+	font-size: 17px;
+	color: rgb(150, 150, 170);
+}
+
+form input[type="text"] {
+	margin-top: 30px;
+	width: 80%;
+	padding: 10px;
+	border: 1px solid rgb(150, 150, 170);
+}
+
+form input[type="text"]:focus, form select:focus, form textarea:focus {
+	outline: 0;
+}
+
+form select {
+	color: rgb(150, 150, 170);
+	width: calc(80% + 26px);
+	margin-top: 30px;
+	padding: 10px;
+	display: inline-block;
+	border: 1px solid rgb(150, 150, 170);
+}
+
+form select option[disabled] {
+	font-weight: 600;
+}
+
+form select option:nth-of-type(3) {
+	color: seagreen;
+}
+
+form h2 {
+	margin-top: 30px;
+	color: rgb(150, 150, 170);
+}
+
+.input {
+	display: inline-block;
+	margin-top: 10px;
+	text-align: left;
+}
+
+.input span {
+	margin-left: 10px;
+	font-size: 16px;
+	color: rgb(150, 150, 170);
+}
+
+form input[type="submit"] {
+	width: 140px;
+	height: 40px;
+	cursor: pointer;
+	margin-top: 30px;
+	border: 2px solid rgb(130, 130, 150);
+	font-size: 16px;
+	color: white;
+	background-color: rgb(150, 150, 170);
+}
+
+form textarea {
+	margin-top: 30px;
+	width: 80%;
+	padding: 10px;
+	border: 1px solid rgb(150, 150, 170);
+	resize: none;
+}

@@ -1,0 +1,56 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Varela+Round&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Varela Round', sans-serif;
+}
+
+html,body{
+	height: 100%; 
+}
+/*
+table.table1 {
+	width: 500px;
+	/*Para colidir as bordas*//*
+	border-collapse: collapse;
+	margin: 0px auto;
+}
+
+table tr td {
+	background-color: rgb(200, 220, 200);
+	height: 300px;
+	vertical-align: middle;
+	border: 3px solid black;
+}
+*/
+
+.menu-fixed {
+	/*
+	position: fixed; <- Padrão: static.
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+	bottom: 0px;
+	*/
+	position: relative;
+	width: 100%;
+	height: 200px;
+	background-color: #069;
+}
+
+.box {
+	width: 100%;
+	height: 1400px;
+	background-color: green;
+}
+
+.box p {
+	width: 450px;
+	margin: 0px auto;
+	text-align: justify;
+	color: white;
+	text-shadow: 0.5px 0.5px 1px rgba(0, 0, 0, 0.5)
+}

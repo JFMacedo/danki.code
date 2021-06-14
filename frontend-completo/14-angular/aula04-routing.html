@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Angular JS</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gotu&display=swap" rel="stylesheet" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Gotu', sans-serif;
+      }
+
+      a {
+        display: block;
+        text-decoration: none;
+        color: #007246;
+        margin: 15px;
+      }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular-route.js"></script>
+  </head>
+  <body ng-app="myApp">
+
+    <p><a href="#/!">Main</a></p>
+
+    <a href="#!red">Red</a>
+    <a href="#!green">Green</a>
+    <a href="#!blue">Blue</a>
+
+    <div ng-view style="padding: 15px;"></div>
+
+    <script>
+
+      var app = angular.module('myApp', ['ngRoute']);
+      app.config(function($routeProvider) {
+        $routeProvider
+          .when('/', {
+            templateUrl: 'template/main.html'
+          })
+          .when('/red', {
+            templateUrl: 'template/red.html'
+          })
+          .when('/green', {
+            templateUrl: 'template/green.html'
+          })
+          .when('/blue', {
+            templateUrl: 'template/blue.html'
+          });
+      });
+
+    </script>
+
+  </body>
+</html>

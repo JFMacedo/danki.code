@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Slabo 27px', serif;
+}
+
+.table {
+  display: table;
+  width: 900px;
+  margin: 0 auto;
+  border-collapse: collapse;
+}
+
+.table-row {
+  display: table-row;
+}
+
+.table-cel {
+  height: 200px;
+  vertical-align: middle;
+  text-align: center;
+  padding: 10px;
+  border: 1px solid black;
+  display: table-cell;
+}

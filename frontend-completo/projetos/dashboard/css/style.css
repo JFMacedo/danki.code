@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto Slab', serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+}
+
+aside {
+  width: 300px;
+  height: 100%;
+  background-color: #2D3530;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid #939995;
+}
+
+aside div.header {
+  width: 100%;
+  height: 75px;
+  text-align: center;
+  line-height: 75px;
+  background-color: #262D28;
+  border-bottom: 1px solid #939995;
+}
+
+aside div.header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #F9FCFA;
+}
+
+aside div.menu nav {
+  height: 100%;
+  background-color: #2D3530;
+}
+
+aside div.menu nav ul {
+  list-style-type: none;
+}
+
+aside div.menu nav ul li a {
+  display: block;
+  width: 100%;
+  padding: 15px;
+  font-size: 17px;
+  font-weight: 600;
+  color: #939995;
+  text-decoration: none;
+}
+
+aside div.menu nav ul li a:hover {
+  transition: 0.3s;
+  color: #F9FCFA;
+  background-color: #262D28;
+}
+
+aside div.menu nav ul li a:hover i {
+  transition: 0.3s;
+  color: #3BB86D;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  background-color: #F9FCFA;
+}
+
+main header {
+  display: flex;
+  text-align: right;
+  width: 100%;
+  height: 75px;
+  padding: 15px;
+  background-color: #FFFFFF;
+  border-bottom: 1px solid #939995;
+  justify-content: end;
+}
+
+main header div.mobile {
+  width: 100%;
+  height: 100%;
+  padding: 7px 0;
+  text-align: left;
+}
+
+main header div.mobile > i {
+  display: block;
+  width: 45px;
+  font-size: 31px;
+  text-align: center;
+  color: #939995;
+  cursor: pointer;
+}
+
+main header h3 {
+  width: 100%;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 45px;
+  text-align: right;
+  color: #939995;
+}
+
+main header div.alert-icon {
+  text-align: center;
+  position: relative;
+  margin: 0 20px;
+}
+
+main header div.alert-icon p {
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 15px;
+  height: 15px;
+  text-align: center;
+  line-height: 15px;
+  font-size: 12px;
+  color: #F9FCFA;
+  background-color: #ED7387;
+  border-radius: 50%;
+}
+
+main header div.alert-icon i {
+  font-size: 25px;
+  width: 45px;
+  line-height: 45px;
+  color: #7387ED;
+}
+
+main header form {
+  display: flex;
+  height: 100%;
+  align-items: center;
+}
+
+main header form label {
+  background-color: #939995;
+  font-size: 25px;
+  line-height: 45px;
+  width: 45px;
+  text-align: center;
+  color: #FFFFFF;
+  border-radius: 5px 0 0 5px;
+}
+
+main header form input {
+  width: 0px;
+  height: 45px;
+  padding: 5px;
+  color: #2D3530;
+  font-size: 17px;
+  border: 1px solid #939995;
+  background-color: #939995;
+  border-radius: 0 5px 5px 0;
+  transition: 0.5s;
+}
+
+main header form input:focus {
+  outline: none;
+  width: 220px;
+  background-color: #FFFFFF;
+}
+
+main div.container {
+  width: 100%;
+  height: calc(100% - 75px);
+  display: flex;
+}
+
+main section.main {
+  width: 80%;
+  padding: 20px;
+  overflow-y: auto;
+}
+
+main section.main div.panel {
+  width: 100%;
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #FFFFFF;
+  border: 1px solid #939995;
+}
+
+main section.main div.panel h2 {
+  color: #7F7F7F;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+main section.main div.panel p {
+  color: #939995;
+  font-size: 17px;
+  margin-top: 10px;
+}
+
+main section.aside {
+  width: 20%;
+  height: 100%;
+  background-color: #D3D9D5;
+  border-left: 1px solid #939995;
+  overflow-y: auto;
+}
+
+main section.aside div.header {
+  width: 100%;
+  padding: 15px 0;
+  text-align: center;
+  border-bottom: 1px solid #939995;
+}
+
+main section.aside div.header h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #262D28;
+  text-shadow: 1px 1px 1px #F9FCFA;
+}
+
+main section.aside div.register {
+  padding: 20px 2% 20px 10%;
+}
+
+main section.aside div.register div.activity {
+  position: relative;
+  padding-bottom: 20px;
+  padding-left: 8%;
+  border-left: 1px solid #939995;
+}
+
+main section.aside div.register div.activity div.circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #D3D9D5;
+  border: 1px solid #939995;
+  position: absolute;
+  top: 0;
+  left: -10px;
+}
+
+main section.aside div.register div.activity h3 {
+  font-size: 15px;
+  font-weight: 400;
+  color: #7F7F7F;
+  text-shadow: 1px 1px 1px #F9FCFA;
+}
+
+main section.aside div.register div.activity h2 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #F9FCFA;
+  text-shadow: 1px 1px 1px #262D28;
+}
+
+main section.aside div.register div.activity p {
+  font-size: 15px;
+  color: #262D28;
+  text-shadow: 1px 1px 1px #F9FCFA;
+}
+
+main section.aside div.register div.activity p strong {
+  font-size: 15px;
+  font-weight: 600;
+  color: #262D28;
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+  aside {
+    display: none;
+  }
+
+  main header h3 {
+    display: none;
+  }
+
+  main section.aside {
+    display: none;
+  }
+
+  main section.main {
+    width: 100%;
+    padding: 20px;
+    overflow-y: auto;
+  }
+}

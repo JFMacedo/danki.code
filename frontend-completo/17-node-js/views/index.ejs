@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+  <title>Crientes | Listagem</title>
+  <link rel="stylesheet" type="text/css" href="/style.css" />
+</head>
+<body>
+  <section>
+    <h2>Lista de Clientes</h2>
+    <table>
+      <tr class="title">
+        <td class="p">Nome do Cliente</td>
+        <td class="s">Empresa</td>
+      </tr>
+      <% list.forEach((client) => { %>
+        <tr>
+          <td class="p"><%= client.name %> <%= client.lastName %></td>
+          <td class="s"><%= client.company %></td>
+        </tr>
+      <% }) %>
+    </table>
+    <a href="/register">Cadastrar Clientes</a>
+  </section>
+</body>
+</html>

@@ -1,0 +1,22 @@
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@300;400;500&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+div, section {
+  background-color: #0A0CAF;
+  border-radius: 10px;
+  padding: 10px;
+  width: 300px;
+  height: 300px;
+  margin: 20px; }
+  div a, section a {
+    font-family: "Fira Sans Condensed", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: #FFFFFF;
+    text-decoration: none;
+    text-shadow: 1px 1px 1px #000000; }
+
+/*# sourceMappingURL=style.css.map */

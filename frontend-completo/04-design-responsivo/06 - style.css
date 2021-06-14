@@ -1,0 +1,44 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Prociono&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Prociono', serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.box {
+  border: 1px solid greenyellow;
+  width: 33.3%;
+  height: 300px;
+  background-color: green;
+  float: left;
+}
+
+/* Combinando condições 1 "e" otra */
+@media screen and (max-width: 768px) and (max-height: 500px) {
+  .box {
+    width: 100%;
+  }
+}
+
+/* Condições diferentes 1 "ou" outra
+@media screen and (max-width: 768px) , screen and (max-height: 500px) {
+  .box {
+    width: 100%;
+  }
+}
+*/
+
+/* Largura até 2x maior que a altura
+@media screen and (max-aspect-ratio: 2/1) {
+  .box {
+    width: 100%;
+  }
+}
+*/

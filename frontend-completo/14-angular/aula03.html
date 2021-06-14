@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Angular JS</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+  <style>
+    input {
+      border: 1px solid #AABBCC;
+      margin-bottom: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div ng-app="myApp" ng-controller="myCtrl">
+    Nome: <input ng-model="name" /> <br />
+    Sobrenome: <input ng-model="sobrenome"> <br />
+
+    O nome digitado foi {{name}} {{sobrenome}}.
+  </div>
+  <script>
+    var app = angular.module("myApp", []);
+
+    app.controller("myCtrl", function($scope) {
+      $scope.name = "Jean";
+      $scope.sobrenome = "Macedo";
+    });
+  </script>
+</body>
+</html>

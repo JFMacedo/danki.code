@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&display=swap');
+
+@bgColor: #007246;
+@titleColor: lighten(@bgColor, 10%);
+@titleShadow: 1px 1px 1px #000000;
+
+* {
+  font-family: 'Acme', sans-serif;
+}
+
+body {
+  background-color: @bgColor;
+}
+
+h2 {
+  color: @titleColor;
+  text-shadow: @titleShadow;
+  font-size: percentage(1.5);
+  &:hover {
+    color: spin(lighten(@bgColor, 10%), 50);
+  }
+  @media screen and (max-width: 900px) {
+    color: lighten(@bgColor, 90%);
+  }
+}
+
+a {
+  text-decoration: none;
+  color: spin(lighten(@bgColor, 10%), 50);
+  font-size: percentage(1.5);
+  text-shadow: @titleShadow;
+}

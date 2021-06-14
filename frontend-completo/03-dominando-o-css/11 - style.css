@@ -1,0 +1,12 @@
+﻿@charset "UTF-8";
+
+@font-face {
+	font-family: "Regular";
+	src: url("_fonts/FiraCode-Retina.ttf")
+}
+
+* {
+	margin: 0px;
+	padding: 0px;
+	font-family: "Regular" !important;
+}

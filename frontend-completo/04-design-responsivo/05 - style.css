@@ -1,0 +1,33 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Prociono&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Prociono', serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.box {
+  border: 1px solid greenyellow;
+  width: 33.3%;
+  height: 300px;
+  background-color: green;
+  float: left;
+}
+
+@media screen and (max-width: 580px) {
+  .box {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .box {
+    width: 100%;
+  }
+}

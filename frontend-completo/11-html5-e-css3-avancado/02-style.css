@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Gotu&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Gotu', sans-serif;
+}
+
+html, body {
+  height: 100%;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+  display: grid;
+  grid-template-columns: 80% 20%;
+  grid-template-areas:
+  "header header"
+  "main aside"
+  "footer footer";
+}
+
+header {
+  grid-area: header;
+  background-color: #ff33ff;
+  padding: 20px;
+  color: aliceblue;
+}
+
+main {
+  grid-area: main;
+  background-color: #ff3300;
+  padding: 20px;
+  color: aliceblue;
+}
+
+main h2 {
+  color: aliceblue;
+}
+
+main p {
+  color: aliceblue;
+}
+
+aside {
+  grid-area: aside;
+  background-color: #33ff00;
+  display: grid;
+  align-items: center;
+  padding: 20px;
+}
+
+aside p {
+  background-color: #330000;
+  text-align: right;
+  color: aliceblue;
+}
+
+footer {
+  grid-area: footer;
+  background-color: #3300ff;
+  padding: 20px;
+  color: aliceblue;
+}

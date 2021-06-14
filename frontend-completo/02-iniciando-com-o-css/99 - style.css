@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Lemonada&display=swap');
+
+/* "*" todos os elementos existentes no documento */
+* {
+	font-family: 'Lemonada', cursive;
+	font-size: 13px;
+	/* "resetando" o documento */
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+.box {
+	box-sizing: border-box;
+	width: 400px;
+	height: 500px;
+	margin: 0 auto;
+	background: rgb(100, 100, 155);
+	color: white;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	padding: 50px 20px 0px 20px;
+	text-align: justify;
+	/*
+	Invisivel e sem contar seu espaço
+	display: none;
+	*/
+	overflow: auto;
+}

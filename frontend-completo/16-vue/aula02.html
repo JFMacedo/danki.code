@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vue JS</title>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+<body>
+  <div id="app" v-html="message">
+    {{message}}
+  </div><!--app-->
+  <div id="app2" v-if="seen">
+    {{nome}}
+  </div><!--app-2-->
+  <script>
+    var app = new Vue({
+      el: '#app',
+      data: {
+        message: '<h2>Olá mundo!</h2>'
+      }
+    })
+
+    var app2 = new Vue({
+      el: '#app2',
+      data: {
+        seen: true,
+        nome: 'Jean Fernandes de Macedo'
+      }
+    })
+  </script>
+</body>
+</html>
